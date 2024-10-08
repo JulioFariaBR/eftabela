@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assitente de Certificado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="fundo"></section>
+    <div id="none_impress">
+        <button class="botao" onclick="location.href = 'https://cerfefass.netlify.app/html/painel.html'">&larr; Voltar</button>
+        <table id="peopleTable">
+            <thead>
+                <tr>
+                    <th class="cabeca">Nome</th>
+                    <!-- Adiciona 16 cabeçalhos para as checkboxes -->
+                    <th class="cabeca">Coluna 1</th>
+                    <th class="cabeca">Coluna 2</th>
+                    <th class="cabeca">Coluna 3</th>
+                    <th class="cabeca">Coluna 4</th>
+                    <th class="cabeca">Coluna 5</th>
+                    <th class="cabeca">Coluna 6</th>
+                    <th class="cabeca">Coluna 7</th>
+                    <th class="cabeca">Coluna 8</th>
+                    <th class="cabeca">Coluna 9</th>
+                    <th class="cabeca">Coluna 10</th>
+                    <th class="cabeca">Coluna 11</th>
+                    <th class="cabeca">Coluna 12</th>
+                    <th class="cabeca">Coluna 13</th>
+                    <th class="cabeca">Coluna 14</th>
+                    <th class="cabeca">Coluna 15</th>
+                    <th class="cabeca">Coluna 16</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                <!-- Aqui você pode alterar os nomes e adicionar mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    
+        <button class="botao" onclick="getSelected()">Obter Selecionados</button>
+        <button class="botao" onclick="window.print()">Imprimir</button>
+        <pre id="result" style="display: none;"></pre>
+    </div>
+    <div id="canva"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
